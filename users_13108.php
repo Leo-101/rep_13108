@@ -11,8 +11,8 @@ include('homepage.php');
 			$n = mysqli_fetch_array($record);
 			$user_ID = $n['user_ID'];
 			$password = $n['password'];
-                        $status = $n['status'];
-                 			$salesperson_ID  = $n['salesperson_ID']; 
+            $status = $n['status'];
+            $salesperson_ID  = $n['salesperson_ID']; 
 
 		
 
@@ -41,7 +41,7 @@ include('homepage.php');
 	<thead>
 		<tr>
 
-			<h3> user_13108 INFORMATION </h3>
+			<h3> User Table  </h3>
 
 
 			<th>user_ID</th>
