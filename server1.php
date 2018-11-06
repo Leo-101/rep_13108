@@ -17,7 +17,7 @@ DEFINE ('DB_NAME', 'omar database');
 	$shade = "";
 	$size = "";
 	$price = "";
-	
+	$id = 0;
 	$update = false;
 
 	if (isset($_POST['save'])) {
@@ -45,7 +45,7 @@ DEFINE ('DB_NAME', 'omar database');
         $shade = $_POST['shade'];
 		$size= $_POST['size'];
 		$price = $_POST['price'];
-		mysqli_query($db, "UPDATE product_13108 SET product_ID = '$product_ID', brand = '$brand', type = '$type', shade = '$shade',size = '$size',price = '$price', WHERE product_13108_ID='$product_13108_ID'");
+		mysqli_query($db, "UPDATE product_13108 SET product_ID = '$product_ID', brand = '$brand', type = '$type', shade = '$shade', size = '$size', price = '$price', WHERE product_ID='$product_ID'");
 		$_SESSION['message'] = "UPDATED"; 
 		header('location: product_13108.php');
 	}

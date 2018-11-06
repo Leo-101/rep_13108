@@ -48,11 +48,11 @@ include('server.php');
 
 
 			<th>Customer_ID</th>
-                        <th>Name</th>
+            <th>Name</th>
 			<th>ContactNo</th>
 			<th>Address</th>
-                        <th>CNIC</th>
-                        <th>Payment_Due</th>
+            <th>CNIC</th>
+            <th>Payment_Due</th>
 
 			
 			
@@ -60,10 +60,10 @@ include('server.php');
 	<?php while ($row = mysqli_fetch_array($results)) { ?>
 		<tr>
 			<td><?php echo $row['Customer_ID']; ?></td>
-                        <td><?php echo $row['Name']; ?></td>
+            <td><?php echo $row['Name']; ?></td>
 			<td><?php echo $row['ContactNo']; ?></td>
 			<td><?php echo $row['Address']; ?></td>
-                        <td><?php echo $row['CNIC']; ?></td>
+            <td><?php echo $row['CNIC']; ?></td>
 			<td><?php echo $row['Payment_Due']; ?></td>
 			
 			<td>

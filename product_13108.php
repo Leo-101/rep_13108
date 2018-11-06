@@ -80,9 +80,9 @@ include('homepage.php');
 
 <form method="post" action="server1.php" >
 
-	<input type="hidden" name="product_ID" value="<?php echo $product_ID; ?>">
+	<input type="hidden" name="id" value="<?php echo $product_ID; ?>">
 	<div class="input-group">
-
+       </div>
 		
 	
 	<div class="input-group">
