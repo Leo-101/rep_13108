@@ -34,7 +34,7 @@ include('homepage.php');
 		</div>
 	<?php endif ?>
 
-
+<?php $results = mysqli_query($db, "SELECT * FROM user_13108"); ?>
 
 <table>
 	
