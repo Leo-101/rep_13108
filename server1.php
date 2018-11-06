@@ -13,7 +13,7 @@ DEFINE ('DB_NAME', 'omar database');
 	// initialize variable
 	$product_ID = "";
 	$brand = "";
-        $Type = "";
+    $type = "";
 	$shade = "";
 	$size = "";
 	$price = "";
@@ -24,7 +24,7 @@ DEFINE ('DB_NAME', 'omar database');
 
 		$product_ID = $_POST['product_ID'];
 		$brand = $_POST['brand'];
-		$Type = $_POST['Type'];
+		$type = $_POST['type'];
         $shade = $_POST['shade'];
 		$size = $_POST['size'];
 		$price = $_POST['price'];
@@ -32,7 +32,7 @@ DEFINE ('DB_NAME', 'omar database');
 
 
 
-		mysqli_query($db, "INSERT INTO product_13108 VALUES ('$product_ID', '$brand', '$Type', '$shade','$size','$price')"); 
+		mysqli_query($db, "INSERT INTO product_13108 VALUES ('$product_ID', '$brand', '$type', '$shade','$size','$price')"); 
                 
 		$_SESSION['message'] = "SAVED!"; 
 		header('location: product_13108.php');
@@ -41,11 +41,11 @@ DEFINE ('DB_NAME', 'omar database');
 	if (isset($_POST['update'])) {
 		$product_ID = $_POST['product_ID'];
 		$brand = $_POST['brand'];
-		$Type = $_POST['Type'];
+		$type = $_POST['type'];
         $shade = $_POST['shade'];
 		$size= $_POST['size'];
 		$price = $_POST['price'];
-		mysqli_query($db, "UPDATE product_13108 SET product_ID = '$product_ID', brand = '$brand', Type = '$Type', shade = '$shade',size = '$size',price = '$price', WHERE product_13108_ID='$product_13108_ID'");
+		mysqli_query($db, "UPDATE product_13108 SET product_ID = '$product_ID', brand = '$brand', type = '$type', shade = '$shade',size = '$size',price = '$price', WHERE product_13108_ID='$product_13108_ID'");
 		$_SESSION['message'] = "UPDATED"; 
 		header('location: product_13108.php');
 	}

@@ -9,13 +9,13 @@ include('homepage.php');
 		$record = mysqli_query($db, "SELECT * FROM product_13108 WHERE product_ID='$product_ID'");
 
 	
-			$n = mysqli_fetch_array($record);
+		$n = mysqli_fetch_array($record);
 			$product_ID = $n['product_ID'];
 			$brand = $n['brand'];
-                        $type = $n['type'];
-                 			$shade  = $n['shade']; 
-							$size  = $n['size']; 
-							$price  = $n['price']; 
+            $type = $n['type'];
+            $shade  = $n['shade']; 
+			$size  = $n['size']; 
+			$price  = $n['price']; 
 
 		
 
