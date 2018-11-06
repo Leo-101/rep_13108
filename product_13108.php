@@ -4,7 +4,7 @@ include('homepage.php');
 
 
 	if (isset($_GET['edit'])) {
-		$ID = $_GET['edit'];
+		$product_ID = $_GET['edit'];
 		$update = true;
 		$record = mysqli_query($db, "SELECT * FROM product_13108 WHERE product_ID='$product_ID'");
 

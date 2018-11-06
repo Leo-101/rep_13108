@@ -3,7 +3,7 @@ include('server3.php');
 include('homepage.php');
 
 	if (isset($_GET['edit'])) {
-		$ID = $_GET['edit'];
+		$salesperson_ID = $_GET['edit'];
 		$update = true;
 		$record = mysqli_query($db, "SELECT * FROM salesperson_13108 WHERE salesperson_ID='$salesperson_ID'");
 
