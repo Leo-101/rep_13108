@@ -41,7 +41,7 @@ include('homepage.php');
 	<thead>
 		<tr>
 
-			<h3> SALES_13108 INFORMATION </h3>
+			<h3> SALESPERSON TABLE </h3>
 
 
 			

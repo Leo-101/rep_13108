@@ -41,7 +41,7 @@ include('homepage.php');
 	<thead>
 		<tr>
 
-			<h3> User Table  </h3>
+			<h3> USER TABLE  </h3>
 
 
 			<th>user_ID</th>

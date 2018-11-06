@@ -45,7 +45,7 @@ include('homepage.php');
 	<thead>
 		<tr>
 
-			<h3> product_13108 INFORMATION </h3>
+			<h3> PRODUCT TABLE </h3>
 
 
 			<th>product_ID</th>
