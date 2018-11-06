@@ -1,8 +1,8 @@
 <?php 
 
 
-DEFINE ('DB_USER', 'root');
-DEFINE ('DB_password', '');
+DEFINE ('DB_USER', 'omar');
+DEFINE ('DB_password', 'db@fall18');
 DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'omar database');
 
@@ -13,9 +13,9 @@ DEFINE ('DB_NAME', 'omar database');
 	// initialize variable
 	$user_ID = "";
 	$password= "";
-        $status = "";
+    $status = "";
 	$salesperson_ID = "";
-	
+	$id = 0;
 	$update = false;
 
 	if (isset($_POST['save'])) {

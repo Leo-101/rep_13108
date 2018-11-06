@@ -72,15 +72,16 @@ include('homepage.php');
 
 <form method="post" action="server4.php" >
 
-	<input type="hidden" name="user_ID" value="<?php echo $user_ID; ?>">
+	<input type="hidden" name="id" value="<?php echo $user_ID; ?>">
 	<div class="input-group">
-
+    </div>
 		
 	
 	<div class="input-group">
 		<label>user_ID</label>
 		<input type="text" name="user_ID" value="<?php echo $user_ID; ?>">
 	</div>	
+	
 	<div class="input-group">
 		<label>password</label>
 		<input type="text" name="password" value="<?php echo $password ?>">

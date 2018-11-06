@@ -9,11 +9,11 @@ include('homepage.php');
 
 	
 			$n = mysqli_fetch_array($record);
-			$salesperson_ID = $n['salesperson_ID'];
+			
 			$name = $n['name'];
-                        $contactNo = $n['contactNo'];
-                 			$people_assigned  = $n['people_assigned']; 
-
+            $contactNo = $n['contactNo'];
+            $people_assigned  = $n['people_assigned']; 
+            $salesperson_ID = $n['salesperson_ID'];
 		
 
 	}
@@ -44,22 +44,23 @@ include('homepage.php');
 			<h3> SALES_13108 INFORMATION </h3>
 
 
-			<th>salesperson_ID</th>
+			
 			<th>name</th>
 			<th>contactNo</th>
 			<th>people_assigned</th>
-			
+			<th>salesperson_ID</th>
+	
 	<?php $results = mysqli_query($db, "SELECT * FROM salesperson_13108"); 
 	if(!$results){
 		echo "omer";
 	}
 	 while ($row = mysqli_fetch_array($results)) { ?>
 		<tr>
-			<td><?php echo $row['salesperson_ID']; ?></td>
+			
 			<td><?php echo $row['name']; ?></td>
 			<td><?php echo $row['contactNo']; ?></td>
 			<td><?php echo $row['people_assigned']; ?></td>
-			
+			<td><?php echo $row['salesperson_ID']; ?></td>
 			
 			<td>
 				<a href="salesperson_13108.php?edit=<?php echo $row['salesperson_ID']; ?>" class="edit_btn" >Edit</a>
@@ -74,15 +75,11 @@ include('homepage.php');
 
 <form method="post" action="server3.php" >
 
-	<input type="hidden" name="salesperson_ID" value="<?php echo $salesperson_ID; ?>">
+	<input type="hidden" name="id" value="<?php echo $salesperson_ID; ?>">
 	<div class="input-group">
+    </div> 
 
-		
 	
-	<div class="input-group">
-		<label>salesperson_ID</label>
-		<input type="text" name="salesperson_ID" value="<?php echo $salesperson_ID; ?>">
-	</div>	
 	<div class="input-group">
 		<label>name</label>
 		<input type="text" name="name" value="<?php echo $name ?>">
@@ -98,7 +95,10 @@ include('homepage.php');
 		<input type="text" name="people_assigned" value="<?php echo $people_assigned; ?>">
 	</div>
 
-	
+	<div class="input-group">
+		<label>salesperson_ID</label>
+		<input type="text" name="salesperson_ID" value="<?php echo $salesperson_ID; ?>">
+	</div>	
        
 
 	
