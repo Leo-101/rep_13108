@@ -10,12 +10,12 @@ include('homepage.php');
 
 	
 			$n = mysqli_fetch_array($record);
-						$product_ID = $n['product_ID'];
-						$brand = $n['brand'];
+			$product_ID = $n['product_ID'];
+			$brand = $n['brand'];
                         $type = $n['type'];
-                 		$shade  = $n['shade']; 
-						$size  = $n['size']; 
-						$price  = $n['price']; 
+                 			$shade  = $n['shade']; 
+							$size  = $n['size']; 
+							$price  = $n['price']; 
 
 		
 
@@ -26,7 +26,7 @@ include('homepage.php');
 <html>
 <head>
 	<title>CRUD PHP MySQL 13108 </title>
-	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<?php if (isset($_SESSION['message'])): ?>
