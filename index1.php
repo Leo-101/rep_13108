@@ -9,9 +9,9 @@ include('server.php');
 
 		
 			$n = mysqli_fetch_array($record);
-			$Customer_ID = $n['Customer_ID'];
+						$Customer_ID = $n['Customer_ID'];
                         $Name = $n['Name'];
-			$ContactNo = $n['ContactNo'];
+						$ContactNo = $n['ContactNo'];
                         $Address = $n['Address'];
                         $CNIC = $n['CNIC'];
                         $Payment_Due  = $n['Payment_Due'];

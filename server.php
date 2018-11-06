@@ -1,8 +1,8 @@
 <?php 
 
 
-DEFINE ('DB_USER', 'root');
-DEFINE ('DB_PASSWORD', '');
+DEFINE ('DB_USER', 'omar');
+DEFINE ('DB_PASSWORD', 'db@fall18');
 DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'omar database');
 
