@@ -34,7 +34,7 @@ include('homepage.php');
 		</div>
 	<?php endif ?>
 
-
+<?php $results = mysqli_query($db, "SELECT * FROM user_13108"); ?>
 
 <table>
 	
@@ -60,7 +60,7 @@ include('homepage.php');
 			<td><?php echo $row['status']; ?></td>
 			<td><?php echo $row['salesperson_ID']; ?></td>
 			<td>
-				<a href="user_13108.php?edit=<?php echo $row['user_ID']; ?>" class="edit_btn" >Edit</a>
+				<a href="users_13108.php?edit=<?php echo $row['user_ID']; ?>" class="edit_btn" >Edit</a>
 			
 				<a href="server4.php?del=<?php echo $row['user_ID']; ?>" class="del_btn">Delete</a>
 			</td>
