@@ -1,6 +1,5 @@
 <?php 
-include('server1.php');
-include('homepage.php');
+include('server.php');
 
 
 	if (isset($_GET['edit'])) {
@@ -70,7 +69,7 @@ include('homepage.php');
 			<td>
 				<a href="index1.php?edit=<?php echo $row['Customer_ID']; ?>" class="edit_btn" >Edit</a>
 			
-				<a href="server1.php?del=<?php echo $row['Customer_ID']; ?>" class="del_btn">Delete</a>
+				<a href="server.php?del=<?php echo $row['Customer_ID']; ?>" class="del_btn">Delete</a>
 			</td>
 		</tr>
 	<?php } ?>
@@ -78,9 +77,9 @@ include('homepage.php');
 	
 
 
-<form method="post" action="server1.php" >
+<form method="post" action="server.php" >
 
-	<input type="hidden" name="Customer_ID" value="<?php echo $Customer_ID; ?>">
+	<input type="hidden" name="id" value="<?php echo $Customer_ID; ?>">
 	<div class="input-group">
         </div>
 

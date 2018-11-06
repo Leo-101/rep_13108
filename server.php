@@ -1,8 +1,8 @@
 <?php 
 
 
-DEFINE ('DB_USER', 'omar');
-DEFINE ('DB_PASSWORD', 'db@fall18');
+DEFINE ('DB_USER', 'root');
+DEFINE ('DB_PASSWORD', '');
 DEFINE ('DB_HOST', 'localhost');
 DEFINE ('DB_NAME', 'omar database');
 
@@ -12,22 +12,22 @@ DEFINE ('DB_NAME', 'omar database');
 
 	// initialize variable
 	$Customer_ID = "";
-        $Name = "";
+    $Name = "";
 	$ContactNo = "";	
 	$Address = "";
-        $CNIC = "";        
+    $CNIC = "";        
 	$Payment_Due = "";
 	$id = 0;
 	$update = false;
 
 	if (isset($_POST['save'])) {
 
-				$Customer_ID = $_POST['Customer_ID'];
-                $Name = $_POST['Name'];
-				$ContactNo = $_POST['ContactNo'];                
-				$Address = $_POST['Address'];
-                $CNIC = $_POST['CNIC'];                
-				$Payment_Due = $_POST['Payment_Due'];
+		$Customer_ID = $_POST['Customer_ID'];
+        $Name = $_POST['Name'];
+		$ContactNo = $_POST['ContactNo'];                
+		$Address = $_POST['Address'];
+        $CNIC = $_POST['CNIC'];                
+		$Payment_Due = $_POST['Payment_Due'];
 
 
 
@@ -41,14 +41,14 @@ DEFINE ('DB_NAME', 'omar database');
 	}
 
 	if (isset($_POST['update'])) {
-				$Customer_ID = $_POST['Customer_ID'];
+		$Customer_ID = $_POST['Customer_ID'];
                 $Name = $_POST['Name'];
-				$ContactNo = $_POST['ContactNo'];		
+		$ContactNo = $_POST['ContactNo'];		
                 $Address = $_POST['Address'];
                 $CNIC = $_POST['CNIC'];		
-				$Payment_Due = $_POST['Payment_Due'];
+		$Payment_Due = $_POST['Payment_Due'];
                 
-		mysqli_query($db, "UPDATE customer_13108 SET Customer_ID = '$Customer_ID', Name = '$Name', ContactNo = '$ContactNo', Address = '$Address', CNIC = '$CNIC', Payment_Due = '$Payment_Due' WHERE Customer_ID='$Customer_ID'");
+		mysqli_query($db, "UPDATE customer_13108 SET Customer_ID = '$Customer_ID', Name = '$Name', ContactNo = '$ContactNo',  Address = '$Address', CNIC = '$CNIC', Payment_Due = '$Payment_Due' WHERE Customer_ID='$Customer_ID'");
 		$_SESSION['message'] = "Entry UPDATED!"; 
 		header('location: index1.php');
 	}
