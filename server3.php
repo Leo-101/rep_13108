@@ -48,7 +48,7 @@ DEFINE ('DB_name', 'omar database');
 	}
 
 if (isset($_GET['del'])) {
-	$customerid = $_GET['del'];
+	$salesperson_ID = $_GET['del'];
 	mysqli_query($db, "DELETE FROM salesperson_13108 WHERE salesperson_ID='$salesperson_ID'");
 	$_SESSION['message'] = "DELETED!"; 
 	header('location: salesperson_13108.php');
