@@ -1,6 +1,6 @@
 <?php 
 include('server.php');
-
+include('homepage.php');
 
 	if (isset($_GET['edit'])) {
 		$Customer_ID = $_GET['edit'];
